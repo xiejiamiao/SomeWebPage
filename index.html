@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://nos.netease.com/vod163/nep.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./common.css">
+    <script src="http://nos.netease.com/vod163/nep.min.js"></script>
+    <title>小儿推拿</title>
+    <style>
+        .container {
+            box-sizing: border-box;
+            padding: 2rem;
+        }
+
+        .container .class-section {
+            border-bottom: 1px solid #ccc;
+            padding: 1rem;
+        }
+
+        .container h3 {
+            font-size: 1.6rem;
+        }
+
+        .container ul {
+            margin-top: .6rem;
+        }
+
+        .container li {
+            list-style: none;
+            font-size: 1.4rem;
+            line-height: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="play"></div>
+    <div class="container">
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script src="./videos.json"></script>
+    <script>
+        var lessonInfo = {};
+        $(function () {
+            for (let i = 0; i < videos.length; i++) {
+                const element = videos[i];
+                if (!lessonInfo[element.chapterTitle]) {
+                    lessonInfo[element.chapterTitle] = [
+                        { videoTitle: element.videoTitle, videoUrl: element.videoUrl }
+                    ]
+                } else {
+                    lessonInfo[element.chapterTitle] = lessonInfo[element.chapterTitle].concat(
+                        { videoTitle: element.videoTitle, videoUrl: element.videoUrl }
+                    )
+                }
+            }
+
+            var html = "";
+            for (var item in lessonInfo) {
+                var section = "<div class='class-section'>";
+                section += "<h3>" + item + "</h3>";
+                section += "<ul>"
+                // console.log(lessonInfo[item])
+                for (let i = 0; i < lessonInfo[item].length; i++) {
+                    const element = lessonInfo[item][i];
+                    // console.log(element)
+                    var videoTitle = element.videoTitle
+                    var videoUrl = element.videoUrl
+                    section += "<li class='video-item' data-video='" + videoUrl + "'>"
+                    section += videoTitle
+                    section += "</li>"
+                    console.log(videoTitle)
+                    console.log(videoUrl)
+                }
+                section += "</ul>"
+                section += "</div>"
+                html += section;
+            }
+            $('.container').html(html)
+
+            var nplayer;
+
+            $('.video-item').click(function () {
+                var url = $(this).data('video')
+                if (nplayer) {
+                    nplayer.reset();
+                    nplayer.setDataSource({ src: url, type: "application/x-mpegURL" });
+                    nplayer.play();
+                } else {
+                    var html = '<video id="my-video" class="video-js vjs-fluid" x-webkit-airplay="allow" webkit-playsinline controls poster="//nos.netease.com/vod163/poster.png" preload="auto" data-setup="{}"><source src="' + url + '" type="application/x-mpegURL"></video>';
+                    $('.play').html(html);
+                    nplayer = neplayer('my-video', {}, function () {
+                        console.log('播放器初始化完成');
+                    });
+                    nplayer.play();
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+var videos = [
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第一课  让孩子远离抗生素",
+    "videoTitle": "让孩子远离抗生素",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/WwpItaJN_2284214627_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第二课  小儿推拿真的那么有效吗？",
+    "videoTitle": "小儿推拿真的那么有效吗？",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/AZnhrAA4_2286541659_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第三课  怎么快速学习小儿推拿？",
+    "videoTitle": "怎么快速学习小儿推拿？",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/NywIhsXj_2286545687_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第四课  学习宝贝推拿的注意事项",
+    "videoTitle": "学习宝贝推拿的注意事项",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/wMEC9CTr_2286552630_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第五课  选择安全有效的推拿介质",
+    "videoTitle": "选择安全有效的推拿介质",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/YJN3INij_2286550253_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第六课  全面诊治风寒感冒",
+    "videoTitle": "1. 轻松了解风寒感冒（上）",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/ncc2EbHi_2287187990_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第六课  全面诊治风寒感冒",
+    "videoTitle": "2. 轻松了解风寒感冒（下）",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/64IDJELf_2287192480_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第六课  全面诊治风寒感冒",
+    "videoTitle": "3. 第一阶段（清鼻涕）的推拿手法",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/pN3Hyz63_2329938244_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第六课  全面诊治风寒感冒",
+    "videoTitle": "4.1. 第二阶段（黄鼻涕）的辨证",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/r0QkgOBV_2329977692_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第六课  全面诊治风寒感冒",
+    "videoTitle": "4.2. 第二阶段（黄鼻涕）的推拿手法",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/zHf97y2c_2329978923_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第六课  全面诊治风寒感冒",
+    "videoTitle": "5. 第三阶段（里热高烧）的推拿手法",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/vM3RTp2p_2329984694_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第六课  全面诊治风寒感冒",
+    "videoTitle": "6.1. 第四阶段（只剩咳嗽）的辨证",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/lEsIknmL_2329984850_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第六课  全面诊治风寒感冒",
+    "videoTitle": "6.2. 第四阶段（只剩咳嗽）的推拿手法",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/dZEPyYkl_2329988206_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第六课  全面诊治风寒感冒",
+    "videoTitle": "7.1. 第五阶段（久咳）的辨证",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/dzYzw9fc_2329990067_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第六课  全面诊治风寒感冒",
+    "videoTitle": "7.2. 第五阶段（久咳）的推拿手法",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/Jv06KxpL_2329993266_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第七课  全面诊治风热感冒",
+    "videoTitle": "1. 快速辨别风热感冒",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/Pc53Vryn_2329992667_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第七课  全面诊治风热感冒",
+    "videoTitle": "2. 用儿推怎么治疗风热感冒",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/XvWhqY4v_2329991791_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第八课  全面诊治寒湿感冒",
+    "videoTitle": "1. 快速辨别寒湿感冒",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/9OuBKjLM_2330012129_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第八课  全面诊治寒湿感冒",
+    "videoTitle": "2. 治疗寒湿感冒的儿推手法",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/zN2xEML8_2330013247_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第九课  小儿发烧怎么退烧？",
+    "videoTitle": "1. 教你如何分辨宝宝发烧的原因",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/1T5ShQAL_2346955619_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第九课  小儿发烧怎么退烧？",
+    "videoTitle": "2. 帮助宝宝退烧的推拿手法",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/omxDRWiR_2345256216_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第十课  咳嗽要怎么推才好的快？",
+    "videoTitle": "咳嗽要怎么推才好的快？",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/9mXEXgoN_2330028409_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第十一课  小儿积食厌食怎么办？",
+    "videoTitle": "1. 小儿积食厌食的原因有哪些？",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/FcfvieAa_2330028818_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第十一课  小儿积食厌食怎么办？",
+    "videoTitle": "2. 治疗积食厌食的推拿手法",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/MR7jCIT2_2330032177_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第十二课  小儿腹泻儿推帮你忙",
+    "videoTitle": "1. 如何辨别小儿腹泻的诱因？",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/MvwpAQUO_2330032480_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第十二课  小儿腹泻儿推帮你忙",
+    "videoTitle": "2. 治疗小儿腹泻的推拿手法",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/dMUc4bBZ_2330037487_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第十三课  让宝宝不便秘的小儿推拿",
+    "videoTitle": "1. 造成宝宝便秘都有哪些因素？",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/doOvOfU6_2330037772_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第十三课  让宝宝不便秘的小儿推拿",
+    "videoTitle": "2. 让宝宝不便秘的推拿手法",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/miOtIM22_2330046498_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第十四课  宝贝推拿助宝宝智力快速发育",
+    "videoTitle": "1. 了解宝宝智力发育的影响因素",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/EiWvznv7_2330050192_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第十四课  宝贝推拿助宝宝智力快速发育",
+    "videoTitle": "2. 想宝宝聪明要多按这几个穴",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/xsv8In1D_2330056336_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第十五课  宝贝推拿助宝宝长得高",
+    "videoTitle": "1. 影响宝宝身高的主要因素",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/TPQkkkDp_2330056983_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第十五课  宝贝推拿助宝宝长得高",
+    "videoTitle": "2. 让宝宝长得更高的推拿手法",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/eObqz06p_2330064261_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第十六课 宝贝推拿助孩子睡个好觉",
+    "videoTitle": "宝贝推拿助孩子睡个好觉",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/GIVXy1vx_2359432019_shd.m3u8"
+  },
+  {
+    "lessonTitle": "宝贝推拿",
+    "chapterTitle": "第十七课 宝贝推拿让孩子告别营养不良",
+    "videoTitle": "如何辨别孩子是否营养不良",
+    "videoUrl": "http://vodlrgmqkuj.vod.126.net/vodlrgmqkuj/coKM3V4I_2391099150_shd.m3u8"
+  }
+]
